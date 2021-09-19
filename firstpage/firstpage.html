@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Page styles-->
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!--Title and icon of tab-->
+    <link rel="shortcat icon" href="https://images.squarespace-cdn.com/content/v1/5bab98d9f4e53108da59ae49/1587412249763-N5N5IV5KMEMBX7MUB3YW/covid19_icon.png" />
+    <title>Covid-19</title>
+</head>
+
+<body>
+    <!--Page header with company name and pagination-->
+    <div class="entrance">
+        <div class="brand-name col-lg-9">
+            <img src="../assets/name.png" alt="company name" />
+        </div>
+        <div>
+            <h5 class="pages col-lg-3">1/4</h5>
+        </div>
+    </div>
+    <!--Main ody of page with input fields about personal information-->
+    <div class="main-container">
+        <div class="col-lg-5">
+            <form class="input-fields" id="first-form" name="contactForm">
+                <div class="form-group">
+                    <label for="name"><b>სახელი<span>&#42;</span></b></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="სახელი"
+              required
+            />
+            <div class="error" id="nameErr"></div>
+          </div>
+          <div class="form-group">
+            <label for="surname"
+              ><b>გვარი<span>&#42;</span></b></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="surname"
+              name="lastname"
+              placeholder="გვარი"
+              required
+            />
+            <div class="error" id="lastnameErr"></div>
+          </div>
+          <div class="form-group">
+            <label for="email"
+              ><b>მეილი<span>&#42;</span></b></label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="fbi@redberry.com"
+              required
+            />
+            <div class="error" id="emailErr"></div>
+          </div>
+        </form>
+        <div class="under-text">
+          <p>*_ით მონიშნული ველების შევსება სავალდებულოა</p>
+        </div>
+      </div>
+      <div class="media col-lg-5">
+        <img src="../assets/scan.png" alt="scan image" />
+      </div>
+    </div>
+    <!--Page Footer for switching pages-->
+    <div class="pagination" id="submit " type="submit">
+      <div></div>
+      <button id="next" disabled onclick="formValidation()">
+        <i class="fas fa-chevron-right fa-x"></i>
+      </button>
+    </div>
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script rel="text/javascript" src="./firstpagescript.js"></script>
+  </body>
+</html>
